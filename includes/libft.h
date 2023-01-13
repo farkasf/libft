@@ -6,7 +6,7 @@
 /*   By: ffarkas <ffarkas@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/09 19:52:46 by ffarkas           #+#    #+#             */
-/*   Updated: 2023/01/12 21:49:25 by ffarkas          ###   ########.fr       */
+/*   Updated: 2023/01/14 00:11:08 by ffarkas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ int		ft_isprint(int c);
 int		ft_strlen(const char *str);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
+int		ft_atoi(const char *str);
 
 char	*ft_strchr(const char *str, int c);
 char	*ft_strrchr(const char *str, int c);
