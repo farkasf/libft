@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ffarkas <ffarkas@student.42prague.com      +#+  +:+       +#+        */
+/*   By: ffarkas <ffarkas@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/14 00:18:13 by ffarkas           #+#    #+#             */
-/*   Updated: 2023/01/14 00:27:12 by ffarkas          ###   ########.fr       */
+/*   Updated: 2023/01/14 04:05:56 by ffarkas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dest, const char *src, size_t size)
+size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t	i;
 	size_t	out;
@@ -23,12 +23,12 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 		out++;
 	if (size > 0)
 	{
-		while (str[i] && i < (size - 1))
+		while (src[i] && i < (size - 1))
 		{
-			dest[i] = src[i];
+			dst[i] = src[i];
 			i++;
 		}
-		dest[i] = '\0';
+		dst[i] = '\0';
 	}
 	return (out);
 }
