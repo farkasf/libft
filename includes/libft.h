@@ -6,7 +6,7 @@
 /*   By: ffarkas <ffarkas@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/09 19:52:46 by ffarkas           #+#    #+#             */
-/*   Updated: 2023/01/14 04:17:18 by ffarkas          ###   ########.fr       */
+/*   Updated: 2023/01/16 22:46:41 by ffarkas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,12 @@ char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 char	*ft_strdup(const char *src);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strjoin(char const *s1, char const *s2);
+//char	*ft_strtrim(char const *s1, char const *set);
+//char	**ft_split(char const *s, char c);
+char	*ft_itoa(int n);
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
@@ -45,5 +51,6 @@ void	*ft_memmove(void *dst, const void *src, size_t length);
 void	ft_bzero(void *s, size_t n);
 void	*ft_memchr(const void *buf, int ch, size_t length);
 void	*ft_calloc(size_t n, size_t size);
+void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 
 #endif

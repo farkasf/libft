@@ -1,25 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ffarkas <ffarkas@student.42prague.com      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/14 02:20:44 by ffarkas           #+#    #+#             */
-/*   Updated: 2023/01/16 21:17:31 by ffarkas          ###   ########.fr       */
+/*   Created: 2023/01/16 22:02:56 by ffarkas           #+#    #+#             */
+/*   Updated: 2023/01/16 22:05:52 by ffarkas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t	i;
+	size_t	j;
+	char	*str;
 
 	i = 0;
-	if (n == 0)
-		return (0);
-	while (s1[i] && s1[i] == s2[i] && i < n - 1)
+	j = 0;
+	str = malloc((len + 1) * sizeof(char));
+	if (str == 0)
+		return (NULL);
+	while (s[i])
+	{
+		if (i >= start && i < len)
+		{
+			str[j] = s[i];
+			j++;
+		}
 		i++;
-	return (((unsigned char *)s1)[i] - ((unsigned char *)s2)[i]);
+	}
+	str[j] = '\0';
+	return (str);
 }
