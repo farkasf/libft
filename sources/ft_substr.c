@@ -25,7 +25,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (NULL);
 	while (s[i])
 	{
-		if (i >= start && i < len)
+		if (i >= start && j < len)
 		{
 			str[j] = s[i];
 			j++;
