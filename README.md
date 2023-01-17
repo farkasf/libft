@@ -1,9 +1,10 @@
 # libft
 *Your very first own library*
 In this project, various functions of the C standard library and other utility functions are recoded. It is about understanding the way these functions work, implementing and learning to use them.
+![logo](resources/Hotpot_binary_code_book.png)
 
 ### functions
-Standard library     | List of Functions
+Standard library     | List of functions
 :--------------------|:----------
 **ft_ctype.h**       | ft_isascii, ft_isalnum, ft_isalpha, ft_isprint, ft_tolower, ft_toupper
 **ft_stdio.h**       | ft_putchar_fd, ft_putendl_fd, ft_putnbr_fd, ft_putstr_fd
