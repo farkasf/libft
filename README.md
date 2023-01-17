@@ -10,4 +10,5 @@ Standard library     | List of Functions
 **ft_stdlib.h**      | ft_atoi, ft_itoa, ft_calloc
 **ft_string.h**      | ft_strncmp, ft_strlcat, ft_strchr, ft_strrchr, ft_strlcpy, ft_strnstr, ft_strdup, ft_strjoin, ft_strmapi, ft_strtrim, ft_split, ft_striteri, ft_memcpy, ft_memchr, ft_memmove, ft_memset, ft_memcmp, ft_strlen, ft_substr, ft_split
 **ft_strings.h**     | ft_bzero
+
 *Some of the functions included don't exist in the Standard C library, or are part of it in a different form. They are included in the table above based on their behaviour.*
