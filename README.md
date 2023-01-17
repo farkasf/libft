@@ -1,7 +1,10 @@
 # libft
 *Your very first own library*
 In this project, various functions of the C standard library and other utility functions are recoded. It is about understanding the way these functions work, implementing and learning to use them.
-![image](https://hotpotmedia.s3.us-east-2.amazonaws.com/8-nXAzHRDAnV6zFPn.png?nc=1)
+
+<p align="center">
+  <img width="256" height="256" src="resources/Hotpot_binary_code_book.png">
+</p>
 
 ### functions
 Standard library     | List of functions
