@@ -2,7 +2,7 @@
 *Your very first own library*
 In this project, various functions of the C standard library and other utility functions are recoded. It is about understanding the way these functions work, implementing and learning to use them.
 
-##### functions
+### functions
 Standard library     | List of Functions
 :--------------------|:----------
 **ft_ctype.h**       | ft_isascii, ft_isalnum, ft_isalpha, ft_isprint, ft_tolower, ft_toupper
