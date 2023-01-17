@@ -3,18 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ffarkas <ffarkas@student.42prague.com      +#+  +:+       +#+        */
+/*   By: ffarkas <ffarkas@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/16 22:25:16 by ffarkas           #+#    #+#             */
-/*   Updated: 2023/01/16 22:31:34 by ffarkas          ###   ########.fr       */
+/*   Updated: 2023/01/17 01:30:38 by ffarkas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static unsigned int	ft_numsize(int num)
+static size_t	ft_numsize(int num)
 {
-	unsigned int	i;
+	int	i;
 
 	i = 0;
 	if (num == 0)
@@ -34,6 +34,8 @@ char	*ft_itoa(int c)
 	unsigned int	size;
 	char			*str;
 
+	if (c == -2147483648)
+		return (ft_strdup("-2147483648"));
 	size = ft_numsize(c);
 	str = malloc((size + 1) * sizeof(char));
 	if (str == 0)
