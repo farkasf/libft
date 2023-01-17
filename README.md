@@ -1,5 +1,6 @@
 # libft
 *Your very first own library*
+
 In this project, various functions of the C standard library and other utility functions are recoded. It is about understanding the way these functions work, implementing and learning to use them.
 
 <p align="center">
