@@ -38,7 +38,7 @@ OBJS = $(SRC:.c=.o)
 
 FLAGS = -Wall -Wextra -Werror
 
-CC = gcc
+CC = cc
 
 HEADER = libft.h
 
