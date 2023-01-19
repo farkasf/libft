@@ -6,7 +6,7 @@
 /*   By: ffarkas <ffarkas@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/18 23:11:40 by ffarkas           #+#    #+#             */
-/*   Updated: 2023/01/18 23:49:26 by ffarkas          ###   ########.fr       */
+/*   Updated: 2023/01/19 21:24:57 by ffarkas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,12 +46,30 @@ static int	ft_wlen(const char *s, char c, int i)
 	return (len);
 }
 
+static char	*ft_cword(const char *s, char c, int *i)
+{
+	char	*w;
+	int		k;
+
+	k = 0;
+	w = (char *)malloc((ft_wlen(s, c, *i) + 1) * sizeof(char));
+	if (w == 0)
+		return (NULL);
+	while (s[*i] && s[*i] != c)
+	{
+		w[k] = s[*i];
+		*i += 1;
+		k++;
+	}
+	w[k] = '\0';
+	return (w);
+}
+
 char	**ft_split(char const *s, char c)
 {
-	int	i;
-	int	j;
-	int	k;
 	char	**str;
+	int		i;
+	int		j;
 
 	str = (char **)malloc((ft_wcount(s, c) + 1) * sizeof(char *));
 	if (str == 0)
@@ -60,21 +78,11 @@ char	**ft_split(char const *s, char c)
 	j = 0;
 	while (s[i])
 	{
-		k = 0;
 		while (s[i] == c)
 			i++;
 		if (s[i])
 		{
-			str[j] = (char *)malloc((ft_wlen(s, c, i) + 1) * sizeof(char));
-			if (str[j] == 0)
-				return (NULL);
-			while (s[i] && s[i] != c)
-			{
-				str[j][k] = s[i];
-				i++;
-				k++;
-			}
-			str[j][k] = '\0';
+			str[j] = ft_cword(s, c, &i);
 			j++;
 		}
 	}
