@@ -1,5 +1,4 @@
 NAME = libft.a
-
 SRC = ft_atoi.c \
 	ft_bzero.c \
 	ft_calloc.c \
@@ -33,24 +32,21 @@ SRC = ft_atoi.c \
 	ft_strtrim.c \
 	ft_substr.c \
 	ft_tolower.c \
-	ft_toupper.c \
-
+	ft_toupper.c
 OBJS = $(SRC:.c=.o)
-
-FLAGS = -Wall -Wextra -Werror
-
+CFLAGS = -Wall -Wextra -Werror
 CC = cc
-
-HEADER = libft.h
+INCL = libft.h
 
 all: $(NAME)
 
 $(NAME):
-	$(CC) $(FLAGS) -c $(SRC)
+	$(CC) $(CFLAGS) -c $(SRC) -I $(INCL)
 	ar rc $(NAME) $(OBJS)
+	ranlib $(NAME)
 
 clean:
-	rm -rf $(OBJS)
+	rm -f $(OBJS)
 
 fclean:	clean
 	rm -f $(NAME)
