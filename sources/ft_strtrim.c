@@ -6,7 +6,7 @@
 /*   By: ffarkas <ffarkas@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/17 22:48:46 by ffarkas           #+#    #+#             */
-/*   Updated: 2023/01/18 10:35:26 by ffarkas          ###   ########.fr       */
+/*   Updated: 2023/01/22 15:17:13 by ffarkas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	i = 0;
 	while (ft_isset(s1[i], set) == 1)
 		i++;
-	if ((int)i == ft_strlen(s1))
+	if (i == ft_strlen(s1))
 		return (ft_strdup(""));
 	j = ft_strlen(s1);
 	while (ft_isset(s1[j - 1], set) == 1)
