@@ -33,22 +33,41 @@ SRC = ft_atoi.c \
 	ft_substr.c \
 	ft_tolower.c \
 	ft_toupper.c
+SRC_B = ft_lstadd_back.c \
+	ft_lstadd_front.c \
+	ft_lstclear.c \
+	ft_lstdelone.c \
+	ft_lstiter.c \
+	ft_lstlast.c \
+	ft_lstmap.c \
+	ft_lstnew.c \
+	ft_lstsize.c
 OBJS = $(SRC:.c=.o)
+OBJS_B = $(SRC_B:.c=.o)
 CFLAGS = -Wall -Wextra -Werror
 CC = cc
 INCL = libft.h
+RLIB = ranlib
+CLIB = ar rc
+R = rm -f
 
 all: $(NAME)
 
 $(NAME):
 	$(CC) $(CFLAGS) -c $(SRC) -I $(INCL)
-	ar rc $(NAME) $(OBJS)
-	ranlib $(NAME)
+	$(CLIB) $(NAME) $(OBJS)
+	$(RLIB) $(NAME)
+
+bonus:
+	$(CC) $(CFLAGS) -c $(SRC_B) -I $(INCL)
+	$(CLIB) $(NAME) $(OBJS_B)
+	$(RLIB) $(NAME)
 
 clean:
-	rm -f $(OBJS)
+	$(R) $(OBJS)
+	$(R) $(OBJS_B)
 
 fclean:	clean
-	rm -f $(NAME)
+	$(R) $(NAME)
 
 re: fclean all
