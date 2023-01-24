@@ -377,13 +377,13 @@ void	ft_testtoupper()
 int main(void)
 {
 	int i;
-	printf("LIBFT MANUAL TESTER/n");
+	printf("LIBFT MANUAL TESTER\n");
 	printf("Function to be tested (enter 0 to display the list of the functions): ");
 	scanf("%d", &i);
 	switch (i)
 	{
 		case 0:
-			printf("1:atoi   2:bzero   3:calloc   4:isalnum   5:isalpha   6:isascii   7:isdigit\n8:isprint   9:itoa   10:memchr   11:memcmp   12:memcpy   13:memmove   14:memset\n15:putchar_fd   16:putendl_fd   17:putnbr_fd   18:putstr_fd   19:split   20:strchr\n21:strdup   22:striteri   23:strjoin   24:strlcat   25:strlcpy   26:strlen   27:strmapi\n28:strncmp   29:strnstr   30:strrchr   31:strtrim   32:substr   33:tolower   34:toupper\n");
+			printf("\n1:atoi   2:bzero   3:calloc   4:isalnum   5:isalpha   6:isascii   7:isdigit\n\n8:isprint   9:itoa   10:memchr   11:memcmp   12:memcpy   13:memmove   14:memset\n\n15:putchar_fd   16:putendl_fd   17:putnbr_fd   18:putstr_fd   19:split   20:strchr\n\n21:strdup   22:striteri   23:strjoin   24:strlcat   25:strlcpy   26:strlen   27:strmapi\n\n28:strncmp   29:strnstr   30:strrchr   31:strtrim   32:substr   33:tolower   34:toupper\n\n");
 			break;
 		case 1:
 			ft_testatoi();
