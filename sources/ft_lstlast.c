@@ -6,7 +6,7 @@
 /*   By: ffarkas <ffarkas@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/23 08:00:53 by ffarkas           #+#    #+#             */
-/*   Updated: 2023/01/23 08:23:39 by ffarkas          ###   ########.fr       */
+/*   Updated: 2023/01/24 23:53:36 by ffarkas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,6 @@ t_list	*ft_lstlast(t_list *lst)
 	if (lst == 0)
 		return (NULL);
 	while (lst->next)
-		lst = lst-> next;
+		lst = lst->next;
 	return (lst);
 }
