@@ -377,7 +377,8 @@ void	ft_testtoupper()
 int main(void)
 {
 	int i;
-	printf("Function to be tested (0 for list of the functions): ");
+	printf("LIBFT MANUAL TESTER/n");
+	printf("Function to be tested (enter 0 to display the list of the functions): ");
 	scanf("%d", &i);
 	switch (i)
 	{
