@@ -10,10 +10,10 @@ In this project, various functions of the C standard library and other utility f
 ### functions
 Standard library     | List of functions
 :--------------------|:----------
-**ft_ctype.h**       | ft_isascii, ft_isalnum, ft_isalpha, ft_isprint, ft_tolower, ft_toupper
-**ft_stdio.h**       | ft_putchar_fd, ft_putendl_fd, ft_putnbr_fd, ft_putstr_fd
-**ft_stdlib.h**      | ft_atoi, ft_itoa, ft_calloc
-**ft_string.h**      | ft_strncmp, ft_strlcat, ft_strchr, ft_strrchr, ft_strlcpy, ft_strnstr, ft_strdup, ft_strjoin, ft_strmapi, ft_strtrim, ft_split, ft_striteri, ft_memcpy, ft_memchr, ft_memmove, ft_memset, ft_memcmp, ft_strlen, ft_substr, ft_split
-**ft_strings.h**     | ft_bzero
+**<code>ft_ctype.h</code>**       | <code>ft_isascii</code>, <code>ft_isalnum</code>, <code>ft_isalpha</code>, <code>ft_isprint</code>, <code>ft_tolower</code>, <code>ft_toupper</code>
+**<code>ft_stdio.h</code>**       | <code>ft_putchar_fd</code>, <code>ft_putendl_fd</code>, <code>ft_putnbr_fd</code>, <code>ft_putstr_fd</code>
+**<code>ft_stdlib.h</code>**      | <code>ft_atoi</code>, <code>ft_itoa</code>, <code>ft_calloc</code>
+**<code>ft_string.h</code>**      | <code>ft_strncmp</code>, <code>ft_strlcat</code>, <code>ft_strchr</code>, <code>ft_strrchr</code>, <code>ft_strlcpy</code>, <code>ft_strnstr</code>, <code>ft_strdup</code>, <code>ft_strjoin</code>, <code>ft_strmapi</code>, <code>ft_strtrim</code>, <code>ft_split</code>, <code>ft_striteri</code>, <code>ft_memcpy</code>, <code>ft_memchr</code>, <code>ft_memmove</code>, <code>ft_memset</code>, <code>ft_memcmp</code>, <code>ft_strlen</code>, <code>ft_substr</code>, <code>ft_split</code>
+**<code>ft_strings.h</code>**     | <code>ft_bzero</code>
 
 *Some of the functions included don't exist in the Standard C library, or are part of it in a different form. They are included in the table above based on their behaviour.*
