@@ -7,7 +7,7 @@ In this project, various functions of the C standard library and other utility f
   <img width="256" height="256" src="resources/Hotpot_binary_code_book.png">
 </p>
 
-### functions
+### Functions
 Standard library     | List of functions
 :--------------------|:----------
 **<code>ft_ctype.h</code>**       | <code>ft_isascii</code>, <code>ft_isalnum</code>, <code>ft_isalpha</code>, <code>ft_isprint</code>, <code>ft_tolower</code>, <code>ft_toupper</code>
@@ -17,3 +17,10 @@ Standard library     | List of functions
 **<code>ft_strings.h</code>**     | <code>ft_bzero</code>
 
 *Some of the functions included don't exist in the Standard C library, or are part of it in a different form. They are included in the table above based on their behaviour.*
+
+### Version 2.0
+In this version of the library, the <code>get_next_line</code> and <code>ft_printf</code> projects are implemented.
+Project     | Added functions
+:--------------------|:----------
+**<code>get_next_line</code>**       | <code>ft_get_next_line</code>, <code>ft_strjoin_gnl</code>
+**<code>ft_printf</code>**       | <code>ft_cs</code>, <code>ft_dix</code>, <code>ft_printf</code>, <code>ft_up</code>
