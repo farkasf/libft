@@ -24,3 +24,10 @@ Project     | Added functions
 :--------------------|:----------
 **<code>get_next_line</code>**       | <code>ft_get_next_line</code>, <code>ft_strjoin_gnl</code>
 **<code>ft_printf</code>**       | <code>ft_cs</code>, <code>ft_dix</code>, <code>ft_printf</code>, <code>ft_up</code>
+
+### Version 3.0
+In this version of the library, some of the useful functions from the <code>push_swap</code> project are added.
+Project     | Added functions
+:--------------------|:----------
+**<code>push_swap</code>**       | <code>ft_atoi_long</code>, <code>ft_free_tab</code>
+
